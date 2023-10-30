@@ -1,0 +1,84 @@
+1. Write a program to give the example of control statements. 
+     1.1 If statements. 
+     1.2 Switch Statements. 
+     1.3 For loop. 
+     1.4 While Statements. 
+     1.5 Do statements
+2.Write a program to print the following triangle of binary digits. 
+
+2.1) 
+1 
+1 0 1 
+1 0 0 0 1 
+1 0 0 0 0 0 1 
+1 0 0 0 0 0 0 0 1
+
+2.2)
+5 
+4 5 
+3 4 5 
+2 3 4 5 
+1 2 3 4 5 
+0 1 2 3 4 5    
+2.3)
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5
+
+3.  Create a class with a method which can calculate the sum of first n natural 
+numbers which are divisible by 3 or 5.
+
+Method Name :calculateSum 
+Method Description: Calculate Sum 
+Argument: int n 
+Return Type: int-sum 
+Logic: Calculate the sum of first n natural numbers 
+          which are divisible by 3 or 5.
+
+4.Take three numbers from the user and print the greatest number.
+   Input the 1st number: 25
+   Input the 2nd number: 78
+   Input the 3rd number: 87
+                   Expected Output :
+                   The greatest: 87
+5.write a java program on switch case of class FoodService, expression is feedback based on the feedback 1 to 6 provide the how the service is.
+
+6.Write a program switch case by using expression is string type if the feedback is based on the grade provide the service is good or bad..
+
+7.Write a program create a class ‘simpleobject‘. Using constructor display the message.
+
+8.Define a class named FruitJuice with the following description:
+
+Data Members	               Purpose
+int product_code	stores the product code number
+String flavour	        stores the flavour of the juice (e.g., orange, apple, etc.)
+String pack_type	stores the type of packaging (e.g., tera-pack, PET bottle, etc.)
+int pack_size	         stores package size (e.g., 200 mL, 400 mL, etc.)
+int product_price	stores the price of the product
+
+Member Methods	              Purpose
+
+FruitJuice()	    constructor to initialize integer data members to 0 and string data members to ""
+void input()	    to input and store the product code, flavour, pack type, pack size and product price
+void discount()	    to reduce the product price by 10
+void display()	    to display the product code, flavour, pack type, pack size and product price
+
+9.Create a class Rectangle with data members length, breadth and height.
+Use a parameterised constructor to initialize the object. 
+With the help of function surfacearea() and volume(), 
+calculate and display the surface area and volume of the rectangle.
+
+10.Write a program in Java to display the n terms of odd natural number and their sum. 
+
+Test Data
+Input number of terms is: 5
+Expected Output :
+
+The odd numbers are :                                                            
+1                                                                                
+3                                                                                
+5                                                                                
+7                                                                                
+9                                               
