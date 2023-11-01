@@ -1,0 +1,27 @@
+(1)Exercise:Create a class called Vehicle. Create subclasses like Truck, Bus, Car etc. Add common methods 
+in the base class and specific methods in the corresponding class. Create a class called Road 
+and create objects for the Truck, Car, Bus etc and display the appropriate message. 
+
+
+(2)Exercise:Create a class called Worker. Write classes DailyWorker and SalariedWorker that inherit from
+Worker.Every worker has a name and a salary rate. Write method Pay (int hours) to compute 
+the week pay of every worker.  A Daily worker is paid on the basis of the number of days 
+she/he works.The salaried worker gets paid the wage for 40 hours a week no matter what the
+actual hours are.  Test this program to calculate the pay of workers. 
+
+
+(3)Exercise:Create a class called Shape3D with the following method signatures alone, volume () and 
+surfaceArea (). Then create subclasses like Cylinder, Sphere, and Cubeetc and implement 
+these methods.
+
+		
+
+(4)Exercise:Create two interfaces namely Drawable and Fillable. Create class called Line, Circle, Square and
+implement following methods through interface.
+
+<I>Drawable ------ area()
+<I>Fillable ---------- perimeter()
+
+
+
+
