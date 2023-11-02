@@ -1,0 +1,13 @@
+1.Write a java program to demonstrate Arthimetic Exception.and handle exception by using try catch.
+
+2.Write a java program for ArrayIndexOutOFBound Exception.
+
+3.Write a java program for single try multi catch Example.
+
+4.write a java program for nested try Block.
+
+5.write a java program with class not found exception.
+
+6.write a java program for IlligalArgument Exception.
+
+7.write a java program filenotfound exception 
