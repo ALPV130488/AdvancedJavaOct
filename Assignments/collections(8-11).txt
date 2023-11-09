@@ -1,0 +1,81 @@
+Exercise 1: ArrayList Operations
+Problem: Implement a program that performs the following operations on an ArrayList of integers:
+
+Add elements 1 to 10 to the ArrayList.
+Remove all even numbers.
+Print the remaining elements.
+
+Exercise 2: HashMap Operations
+Problem: Implement a program that uses a HashMap to store student names and their corresponding scores. Perform the following operations:
+
+Add at least five students to the HashMap with their scores.
+Print the names and scores of all students.
+Calculate and print the average score of all students.
+
+Exercise 3: HashSet Operations
+Problem: Create a program that uses a HashSet to store a collection of unique words from a given sentence. Perform the following operations:
+
+Accept a sentence as input.
+Split the sentence into words and add them to the HashSet.
+Print the unique words.
+
+Exercise 4: ArrayList Sorting
+Problem: Implement a program that performs the following operations on an ArrayList of strings:
+
+Add several random strings to the ArrayList.
+Sort the strings in alphabetical order.
+Print the sorted list.
+
+Exercise 5: HashMap Search
+Problem: Create a program that uses a HashMap to store the names of countries and their respective capitals. Implement the following operations:
+
+Add at least five country-capital pairs to the HashMap.
+Prompt the user to enter a country name and retrieve the corresponding capital.
+Display an error message if the country is not found in the HashMap.
+
+Exercise 6: HashSet Intersection
+Problem: Create a program that uses two HashSet collections to find the intersection of elements between them.
+
+Initialize two HashSet collections with some common and some unique elements.
+Find and print the elements that exist in both sets.
+
+Exercise 7: LinkedList Operations
+Problem: Implement a program that performs the following operations on a LinkedList of integers:
+
+Add elements from 1 to 5 to the LinkedList.
+Remove the first and last elements.
+Insert a new element at the beginning.
+Print the LinkedList.
+
+Exercise 8: TreeMap Sorting
+Problem: Create a program that uses a TreeMap to store a collection of words and their corresponding frequencies. Perform the following operations:
+
+Add several words to the TreeMap and keep track of their frequencies.
+Print the words in alphabetical order along with their frequencies.
+
+Exercise 9: HashSet Operations
+Problem: Create a program that uses a HashSet to store a collection of unique employee IDs. Implement the following operations:
+
+Add employee IDs to the HashSet.
+Check if a given employee ID exists in the HashSet.
+Print the number of unique employee IDs.
+
+Exercise 10: HashMap Operations
+Problem: Create a program that uses a HashMap to store the names of fruits and their corresponding colors. Implement the following operations:
+
+Add at least five fruit-color pairs to the HashMap.
+Prompt the user to enter a fruit name and retrieve the corresponding color.
+Display an error message if the fruit is not found in the HashMap.
+
+Exercise 11: ArrayList Filtering
+Problem: Implement a program that performs the following operations on an ArrayList of strings:
+
+Add several random strings to the ArrayList.
+Filter and create a new ArrayList containing strings with a specific prefix.
+Print the filtered ArrayList.
+
+Exercise 12: HashSet Difference
+Problem: Create a program that uses two HashSet collections to find the difference between elements in them.
+
+Initialize two HashSet collections with some common and some unique elements.
+Find and print the elements that exist in the first set but not in the second set.
