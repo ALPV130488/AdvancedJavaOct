@@ -1,0 +1,497 @@
+0,1-binary number system------>coding stand....-------->Ascii/Unicode.....
+
+
+programming lang--------programs= set of instruct
+
+									computer lang
+						scripting lang				programming lang
+						
+												pop						oop
+										basic,...						java,c++,.net......				
+		s.l:-desing websites
+		
+		p.l:-develop software
+		
+		
+		
+		java:-
+		
+		
+		(1)Platform Independency:-wora
+		
+		
+		(2)Garbage collector:-
+		
+		
+		
+		oop:-
+		
+		(1)peformance:-Inheritance,Polymorphism
+		
+		(2)Security:-Abstraction,Encapsulation
+		
+		
+		oops  features------------>  oopl
+		
+		
+		
+		sun microsystems-----oracle 
+		
+		
+		green team(green talk(.gt))------->oak--------->java(.java)[1992]
+		
+		
+		
+		jdk 1.0(1996)
+		
+		
+		jse/j2se:-(no client-server archi)core java ex:-calculator
+		
+		jee/j2ee:-distributed app's,web app's.....(advanced java) ex:-food delivery app
+		
+		jme/j2me:-micro level details
+		
+		
+		set of instructions all together performs a certain task
+		
+		
+		
+		
+		ide shortcuts:-
+		
+		
+		
+		suggestions:-
+		printing - type syso  ==> ctrl+space
+		
+		main met - type main  ==>ctrl+space
+		
+		imports - 				=>ctrl+shift+o
+		
+		formatting 				=>ctrl+shift+f
+		
+		comments 				==>ctrl+/
+		
+		
+		
+		
+								variables
+		Syntax:-
+		
+		
+		 datatypes varname;		//declaration of a variable
+		 
+		 datatypes varname = value;			//initialization of a varible
+		
+		
+		
+							variable
+							
+				local var 					global var
+		
+		
+									static				instance
+		
+		
+		syntax:-  
+
+static:-		static datatypes varname = value;
+
+instance:-      datatypes varname = value;
+
+
+
+
+
+
+
+
+		memory:-
+		
+static:-The memory space will be allocated only once at the time of class loading in to the jvm.
+
+instance:- The memory space will be allocated for every object creation.
+
+
+					class(data member's + mem functions)                 object
+		
+		Note:- for 1 class we can crete n no:-of objects
+		
+		
+
+Access :-
+
+static:-  to call static prop's we need to call with class reference				classname.varname
+
+instance :- to call instance prop's we need to call with obj reference				obj.varname
+
+
+			
+	Object creation :- 				Classname obj name = new Classname();
+		
+		
+
+
+Memory in jvm:-
+
+static :- Mehtod area
+
+instance:- Heap area
+
+
+Usage:-
+
+
+static:-to store common values  ex:-giving natinalilty value
+
+instance:- to store unique data 		ex:-to store unique values like id number
+
+
+				operators:-(ULTRA AB)
+				---------
+
+	U-Uniary
+	L-Logical
+	T-Ternary
+	R-Relational
+	A-Assignment
+	A-Additional/Arithematic
+	B-Bitwise
+
+
+
+
+a+b   (a,b =operands)(+ -->operator)
+
+
+
+
+
+
+											Method's
+											
+			syntax/signature:-
+
+
+						accessmodifier  returntype metname(params....){
+						
+						
+						//body=Method Implementation
+						
+						}
+											
+			static 												instance
+			
+			
+syntax:-
+accessmodifier static  returntype metname(params....){			accessmodifier  returntype metname(params....){
+						
+						
+//body=Method Implementation									//body=Method Implementation}
+						
+}
+
+
+
+Access:-
+
+static:-  to call static prop's we need to call with class reference				classname.metname
+
+instance :- to call instance prop's we need to call with obj reference				obj.metname
+
+
+
+Memory in jvm:-
+
+static :- Mehtod area
+
+instance:- Heap area
+
+
+
+Naming Conventions:-
+
+
+packages:-we need to use  lowercase alphabets
+
+class:- first alphabet must be in uppercase and the next letter can be in lowercase and next word should follow the same
+
+method;final var:- camelCase
+
+
+
+
+		Inheritance:-accquring parent class props.. to child class .
+		
+		
+		 extends							implements
+		 
+		(@class--->class)					(@interface--->interface)
+		(@class--->abstract classes)
+		
+		
+	(1)we can't achieve M.I @class level
+
+	we can achieve M.I @Interface level
+		
+		
+	method implementation:-
+	
+	(1)Abstract met:-The method with no Implementation/body.
+	
+	syntax:-
+	
+	
+						accessmodifier  returntype metname(params....);//interface
+						
+						public void displayData() {};//abstract classes
+	
+						public abstract void displayMsg();//abstract classes
+	
+	
+	
+	 
+	(2)Concrete met:-The method with Implementation/body.
+	
+	syntax:-	accessmodifier  returntype metname(params....){
+						
+						
+						//body=Method Implementation
+						
+						}
+		
+		
+		
+		class:-collection of concrete met's in it
+		
+		interface :-collection of abstract met's
+		
+		abstract classes:- collection of concrete met's + collection of abstract met's
+		
+		
+		
+		Abstraction:-Hiding the implementation/data
+		
+		
+		Polymorphism:-same method will act in many ways
+		
+		(1)Method Overriding :-method name is same but the implementation is different
+		
+		(2)Method Overloading:-method name is same but the methods signature(params) is different.
+								(1)type of params..
+								(2)order of params..
+								(3)No:-of params...
+		
+		class Parent{
+		
+		100method(){}
+		
+		1 trillion (){
+		
+		}
+		
+		marriage(){
+		
+		deepika;
+		
+		}
+		
+		}
+		class child extends Parnet{
+		
+		@Override
+		marriage(){
+		
+		kajol;
+		}
+		
+		
+		}
+		
+		
+		
+		constructor;
+		
+		
+		Constructor:-1.It is used to initialize the objects
+					2.It'll not have any return type
+					
+		
+	syntax:-
+	
+			accessmodifier classname(){
+			
+			//body
+			}
+		Parametrized constructor:-
+		
+		syntax:-
+		
+		
+		accessmodifier classname(params...){
+			
+			//body
+			}
+		
+		
+		
+	Encapsulation:-	Wraps up the data into a single entity.
+		
+		name
+		
+		get()				set()
+		return name	;		name=java
+		
+		
+		*For every java file the default package is java.lang.*;
+		
+		*For every java class the Parent class is java.lang.Object;
+		
+		
+		public
+		
+		protected 
+		
+		default
+		
+		private
+		
+		
+	final:-;
+	
+	
+	
+	**whenever we are calling a constructor inside the child/parent class constructor,the constructor call 
+	must be the first statement
+	
+	
+	this:-;
+	
+	
+	
+	super:-;	
+		
+		
+		
+		1.User freindly error messages.
+		2.to terminate our application in a normal way.
+		
+		
+		Exception Handling in java:-
+		
+		
+		class exceptionname extends Exception{
+		
+		
+		if ()
+		
+		}
+		
+		
+		Arrays:-3 ways to create an  array:-
+		
+		
+		
+	1.	dt arrname[] = new dt[10];
+	
+	2. dt arrname[] = new dt[]{1,1,3,4,5,56,6};
+	
+	3. dt[] arrname = {1,2,34,5,5,6}
+		
+		
+		1.The length of an is fixed in size 
+		
+		2.No utility methods in this arrays
+		
+		3.similar kinds of dt's/homogeneous
+		
+		
+		
+		
+		collection:- framework
+		
+		1.Growable in nature
+		
+		2. utility methods
+		
+		3.heterogenous data/homogenous data
+		
+		
+		collection=classes +interfaces
+		
+		
+		
+		
+				arraylist			linkedlist			vector			stack
+		
+		
+default size:-		10					10				10			10
+		
+		
+capacity formula:-[cc*3/2]+1			node			2*cc		-
+		
+		
+					-					-			LIFO/FILO		-
+					
+					
+					
+					
+	Set:-
+
+			hashSet				LinkedHashSet				TreeSet
+			
+			own order			insertion order				alphabetical order
+			
+			
+			
+			lang Comparable		---->CompareTo() ---->NSO
+			
+			util Comparator		---->Compare() ------>CSO
+			
+			
+			Wrapper classes:-
+			
+			Byte
+			
+			Short 
+			
+			Integer
+			
+			Float
+			
+			
+			
+		String:-group of char's.
+
+				
+				
+			String    					StringBuffer						StringBuilder
+			
+			
+		immutable							mutable							mutable
+		
+										Synchronised						Non-Synchronised
+			
+			
+			
+			io package:-
+			
+			
+			1.create a file	:-File
+			
+			2.Write into a file :- 1.File Writer
+			
+									2.Buffered Writer
+									
+									3.PrintWriter
+									
+									
+			3.Read from the file:-1.File Reader
+									2.BufferedReader-------->0
+									
+									
+			Serialization:-converting obj data into byte data
+			
+			Deserialization:-converting byte data into obj data
+			
+			
