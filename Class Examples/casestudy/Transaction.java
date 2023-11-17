@@ -1,14 +1,15 @@
 package casestudy;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Transaction {
 
-	private int accNo;
+	private long accNo;
 	
 	private String typeOfTrans;
 	
-	private Date date;
+	private LocalDate date;
 	
 	private float withdrawlAmount;
 	
@@ -18,11 +19,11 @@ public class Transaction {
 	
 	private int transId;
 
-	public int getAccNo() {
+	public long getAccNo() {
 		return accNo;
 	}
 
-	public void setAccNo(int accNo) {
+	public void setAccNo(long accNo) {
 		this.accNo = accNo;
 	}
 
@@ -34,11 +35,11 @@ public class Transaction {
 		this.typeOfTrans = typeOfTrans;
 	}
 
-	public Date getDate() {
+	public LocalDate getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(LocalDate date) {
 		this.date = date;
 	}
 
@@ -78,7 +79,7 @@ public class Transaction {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Transaction(int accNo, String typeOfTrans, Date date, float withdrawlAmount, float depositAmount,
+	public Transaction(long accNo, String typeOfTrans, LocalDate date, float withdrawlAmount, float depositAmount,
 			float balance, int transId) {
 		super();
 		this.accNo = accNo;
