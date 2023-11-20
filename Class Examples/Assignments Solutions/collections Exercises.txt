@@ -1,0 +1,411 @@
+Exercise 1: ArrayList Operations
+Problem: Implement a program that performs the following operations on an ArrayList of integers:
+
+Add elements 1 to 10 to the ArrayList.
+Remove all even numbers.
+Print the remaining elements.
+Solution:
+
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayListOperations {
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        // Add elements 1 to 10
+        for (int i = 1; i <= 10; i++) {
+            numbers.add(i);
+        }
+
+        // Remove even numbers
+        Iterator<Integer> iterator = numbers.iterator();
+        while (iterator.hasNext()) {
+            int num = iterator.next();
+            if (num % 2 == 0) {
+                iterator.remove();
+            }
+        }
+
+        // Print remaining elements
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+    }
+}
+Exercise 2: HashMap Operations
+Problem: Implement a program that uses a HashMap to store student names and their corresponding scores. Perform the following operations:
+
+Add at least five students to the HashMap with their scores.
+Print the names and scores of all students.
+Calculate and print the average score of all students.
+Solution:
+
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapOperations {
+    public static void main(String[] args) {
+        Map<String, Integer> studentScores = new HashMap<>();
+
+        // Add students and their scores
+        studentScores.put("Alice", 85);
+        studentScores.put("Bob", 92);
+        studentScores.put("Charlie", 78);
+        studentScores.put("David", 95);
+        studentScores.put("Eve", 88);
+
+        // Print names and scores
+        for (Map.Entry<String, Integer> entry : studentScores.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+
+        // Calculate and print average score
+        int totalScore = 0;
+        for (int score : studentScores.values()) {
+            totalScore += score;
+        }
+        double averageScore = (double) totalScore / studentScores.size();
+        System.out.println("Average Score: " + averageScore);
+    }
+}
+Exercise 3: HashSet Operations
+Problem: Create a program that uses a HashSet to store a collection of unique words from a given sentence. Perform the following operations:
+
+Accept a sentence as input.
+Split the sentence into words and add them to the HashSet.
+Print the unique words.
+Solution:
+
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class HashSetOperations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a sentence: ");
+        String sentence = scanner.nextLine();
+        scanner.close();
+
+        Set<String> uniqueWords = new HashSet<>();
+
+        // Split sentence into words and add them to HashSet
+        String[] words = sentence.split("\\s+");
+        for (String word : words) {
+            uniqueWords.add(word);
+        }
+
+        // Print unique words
+        System.out.println("Unique Words:");
+        for (String word : uniqueWords) {
+            System.out.println(word);
+        }
+    }
+}
+
+Exercise 4: ArrayList Sorting
+Problem: Implement a program that performs the following operations on an ArrayList of strings:
+
+Add several random strings to the ArrayList.
+Sort the strings in alphabetical order.
+Print the sorted list.
+Solution:
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListSorting {
+    public static void main(String[] args) {
+        ArrayList<String> strings = new ArrayList<>();
+        strings.add("Apple");
+        strings.add("Banana");
+        strings.add("Cherry");
+        strings.add("Date");
+        strings.add("Fig");
+
+        // Sort the ArrayList
+        Collections.sort(strings);
+
+        // Print the sorted list
+        for (String str : strings) {
+            System.out.println(str);
+        }
+    }
+}
+Exercise 5: HashMap Search
+Problem: Create a program that uses a HashMap to store the names of countries and their respective capitals. Implement the following operations:
+
+Add at least five country-capital pairs to the HashMap.
+Prompt the user to enter a country name and retrieve the corresponding capital.
+Display an error message if the country is not found in the HashMap.
+Solution:
+
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class HashMapSearch {
+    public static void main(String[] args) {
+        Map<String, String> countryToCapital = new HashMap<>();
+        countryToCapital.put("USA", "Washington, D.C.");
+        countryToCapital.put("France", "Paris");
+        countryToCapital.put("Germany", "Berlin");
+        countryToCapital.put("India", "New Delhi");
+        countryToCapital.put("Japan", "Tokyo");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a country name: ");
+        String country = scanner.nextLine();
+        scanner.close();
+
+        // Search for the capital
+        String capital = countryToCapital.get(country);
+
+        if (capital != null) {
+            System.out.println("Capital of " + country + ": " + capital);
+        } else {
+            System.out.println("Country not found in the database.");
+        }
+    }
+}
+Exercise 6: HashSet Intersection
+Problem: Create a program that uses two HashSet collections to find the intersection of elements between them.
+
+Initialize two HashSet collections with some common and some unique elements.
+Find and print the elements that exist in both sets.
+Solution:
+
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSetIntersection {
+    public static void main(String[] args) {
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
+
+        set1.add(1);
+        set1.add(2);
+        set1.add(3);
+
+        set2.add(2);
+        set2.add(3);
+        set2.add(4);
+
+        // Find the intersection of elements
+        Set<Integer> intersection = new HashSet<>(set1);
+        intersection.retainAll(set2);
+
+        // Print the intersection
+        System.out.println("Intersection of set1 and set2: " + intersection);
+    }
+}
+
+Exercise 7: LinkedList Operations
+Problem: Implement a program that performs the following operations on a LinkedList of integers:
+
+Add elements from 1 to 5 to the LinkedList.
+Remove the first and last elements.
+Insert a new element at the beginning.
+Print the LinkedList.
+Solution:
+
+import java.util.LinkedList;
+
+public class LinkedListOperations {
+    public static void main(String[] args) {
+        LinkedList<Integer> linkedList = new LinkedList<>();
+
+        // Add elements from 1 to 5
+        for (int i = 1; i <= 5; i++) {
+            linkedList.add(i);
+        }
+
+        // Remove the first and last elements
+        linkedList.removeFirst();
+        linkedList.removeLast();
+
+        // Insert a new element at the beginning
+        linkedList.addFirst(0);
+
+        // Print the LinkedList
+        for (int num : linkedList) {
+            System.out.print(num + " ");
+        }
+    }
+}
+Exercise 8: TreeMap Sorting
+Problem: Create a program that uses a TreeMap to store a collection of words and their corresponding frequencies. Perform the following operations:
+
+Add several words to the TreeMap and keep track of their frequencies.
+Print the words in alphabetical order along with their frequencies.
+Solution:
+
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class TreeMapSorting {
+    public static void main(String[] args) {
+        TreeMap<String, Integer> wordFrequency = new TreeMap<>();
+
+        // Add words and update frequencies
+        String[] words = {"apple", "banana", "apple", "cherry", "banana", "date"};
+        for (String word : words) {
+            wordFrequency.put(word, wordFrequency.getOrDefault(word, 0) + 1);
+        }
+
+        // Print words in alphabetical order along with frequencies
+        for (Map.Entry<String, Integer> entry : wordFrequency.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
+Exercise 9: HashSet Operations
+Problem: Create a program that uses a HashSet to store a collection of unique employee IDs. Implement the following operations:
+
+Add employee IDs to the HashSet.
+Check if a given employee ID exists in the HashSet.
+Print the number of unique employee IDs.
+Solution:
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class EmployeeHashSet {
+    public static void main(String[] args) {
+        Set<String> employeeIds = new HashSet<>();
+
+        // Add employee IDs
+        employeeIds.add("E001");
+        employeeIds.add("E002");
+        employeeIds.add("E003");
+        employeeIds.add("E004");
+
+        // Check if an employee ID exists
+        String targetId = "E002";
+        boolean exists = employeeIds.contains(targetId);
+
+        // Print the result
+        if (exists) {
+            System.out.println(targetId + " exists in the set.");
+        } else {
+            System.out.println(targetId + " does not exist in the set.");
+        }
+
+        // Print the number of unique employee IDs
+        System.out.println("Number of unique employee IDs: " + employeeIds.size());
+    }
+}
+
+Exercise 10: HashMap Operations
+Problem: Create a program that uses a HashMap to store the names of fruits and their corresponding colors. Implement the following operations:
+
+Add at least five fruit-color pairs to the HashMap.
+Prompt the user to enter a fruit name and retrieve the corresponding color.
+Display an error message if the fruit is not found in the HashMap.
+Solution:
+
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class FruitColorHashMap {
+    public static void main(String[] args) {
+        Map<String, String> fruitColors = new HashMap<>();
+        fruitColors.put("Apple", "Red");
+        fruitColors.put("Banana", "Yellow");
+        fruitColors.put("Orange", "Orange");
+        fruitColors.put("Grapes", "Purple");
+        fruitColors.put("Kiwi", "Green");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a fruit name: ");
+        String fruit = scanner.nextLine();
+        scanner.close();
+
+        // Search for the color
+        String color = fruitColors.get(fruit);
+
+        if (color != null) {
+            System.out.println("Color of " + fruit + ": " + color);
+        } else {
+            System.out.println("Fruit not found in the database.");
+        }
+    }
+}
+Exercise 11: ArrayList Filtering
+Problem: Implement a program that performs the following operations on an ArrayList of strings:
+
+Add several random strings to the ArrayList.
+Filter and create a new ArrayList containing strings with a specific prefix.
+Print the filtered ArrayList.
+Solution:
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListFiltering {
+    public static void main(String[] args) {
+        ArrayList<String> strings = new ArrayList<>();
+        strings.add("apple");
+        strings.add("banana");
+        strings.add("cherry");
+        strings.add("date");
+        strings.add("grape");
+
+        // Prefix to filter
+        String prefix = "a";
+
+        // Filter and create a new ArrayList
+        List<String> filteredList = new ArrayList<>();
+        for (String str : strings) {
+            if (str.startsWith(prefix)) {
+                filteredList.add(str);
+            }
+        }
+
+        // Print the filtered ArrayList
+        System.out.println("Strings with prefix '" + prefix + "': " + filteredList);
+    }
+}
+Exercise 12: HashSet Difference
+Problem: Create a program that uses two HashSet collections to find the difference between elements in them.
+
+Initialize two HashSet collections with some common and some unique elements.
+Find and print the elements that exist in the first set but not in the second set.
+Solution:
+
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSetDifference {
+    public static void main(String[] args) {
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
+
+        set1.add(1);
+        set1.add(2);
+        set1.add(3);
+
+        set2.add(2);
+        set2.add(3);
+        set2.add(4);
+
+        // Find the difference of elements
+        Set<Integer> difference = new HashSet<>(set1);
+        difference.removeAll(set2);
+
+        // Print the difference
+        System.out.println("Difference between set1 and set2: " + difference);
+    }
+}
