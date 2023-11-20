@@ -495,3 +495,119 @@ capacity formula:-[cc*3/2]+1			node			2*cc		-
 			Deserialization:-converting byte data into obj data
 			
 			
+			
+			DataBase:-
+			
+			Data:-Raw info of any real world entites(specifications,prop's....)
+			
+			Database:- To store the data for future acces in an organized way.
+							
+			
+					RDBMS:-Tabels(rows+columns)
+					
+					
+			query's are divided into 5 types:-
+
+
+					
+					DDL(Data definition language):-create,alter,drop,turncate,rename
+					
+					DML(Data Manipulation language):-insert,update,delete
+					
+					DRL(Data Retrival language):-select
+					
+					DCL(Data Control language):-grant,revoke
+					
+					TCL(Transaction Control language):-commit,rollback
+						
+							
+			To create a user account:-
+			
+			
+			cmd>conn /as sysdba;
+			
+			cmd>create user username identified by password;
+			
+			cmd>grant connect,resource to username;
+			
+			cmd>conn username/password;
+			
+			
+			DDL:-
+			
+			
+	create:-		To crete a tablel:-
+			
+			cmd>create table emp(eid number(10),ename varchar2(10),esal number(10));
+			
+	alter:-		To add a column :-
+			
+			cmd>alter table employees add column edes varchar2(10);
+			
+			To rename a coumn:-
+			
+			cmd>alter table employees rename column eid to eno;
+			
+			To change dt:-
+			
+			cmd>alter table employees modify eno varchar2(10);
+			
+			
+	drop:-To delete the entire table
+		
+			cmd>drop table employees;
+			
+			
+	truncate :-to delete all the records inthe table
+	
+			cmd> truncate table employees;
+	
+			
+										
+	DML:-
+	
+	insert:-	cmd>insert into employees values(10,'java',10000);
+	
+	
+	update :-
+				to add specific value
+				
+			cmd>update employees set eid=eid+40 where ename='java;
+			
+			
+			to update specific value;
+			
+			cmd> update employees set eid=20 where ename='angular';
+			
+			
+	drop:-to delete entire table
+
+	truncate:-to delete all the records inthe table;
+	
+	delete:-to delete particular row in the table;
+	
+	
+	delete:-
+	
+			cmd>delete from employees where ename='angualr'; 
+			
+	DRL:-
+	
+	select:- to retrive all records
+		
+		cmd>select * from employees;
+		
+		to retrive particular columns
+		
+		cmd>select eid from employees;
+		
+		
+	TCL:-
+	
+	commit:-	to save temporary dml query's/homogeneous
+	
+	cmd>commit;
+	
+	rollback:- to undo the deleted records;
+	
+	cmd>rollback;
