@@ -1,0 +1,13 @@
+1.Java program to create a new file.
+
+2.Java program to write content into file using BufferedWriter.
+
+3.Java program to read content from file using BufferedReader.
+
+4.Java program to get file size and file path.
+
+5.Java program to delete a file.
+
+6.Java program to read a file line by line.
+
+7.Java program to rename an existing file.
