@@ -1,0 +1,3 @@
+1.Write a java program to convert object data into byte data of a student class object and store in file.
+
+2.Write a java program to retrive object data from byte data of a student class object from a file.
