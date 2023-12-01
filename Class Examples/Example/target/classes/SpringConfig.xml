@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+  
+  <bean id="emp" class="demo.Example.Employee" autowire="constructor">
+  
+  <property name="empname" value="java"></property>
+  
+  <property name="empid" value="123"></property>
+  
+  <property name="empadd" value="hyderabad"></property>
+  
+  <property name="empsal" value="1000000"></property>
+  
+  
+  </bean>
+    
+    <bean id="emp1" class="demo.Example.Employee"></bean>
+    
+  </beans>  
