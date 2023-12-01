@@ -611,3 +611,163 @@ capacity formula:-[cc*3/2]+1			node			2*cc		-
 	rollback:- to undo the deleted records;
 	
 	cmd>rollback;
+	
+	
+	
+	
+	
+	JDBC:-		java database connectivity
+	
+	
+	1.Loading Driver class.
+	
+	2.create a connection.
+				
+	3.create a statement.
+	
+	4.Executing the quires.
+	
+	5.close the connection.
+	
+	
+	CRUD operations:-
+	
+	insert :--persist()
+	
+	retrive	:-find()
+	
+	update	:-merge()
+	
+	delete	:-remove()
+	
+	
+	(1)quires
+	
+	(2)exception calsses
+	
+	(3)boiler plate code(repeated code)
+	
+	jpa:-(Java Persistence API) 		----specification
+	----
+	
+	(1)No quires
+	
+	(2)No exception handling
+	
+	(3)No boiler plate code
+	
+	implementations:-ORM tools(Object Relational Mapping)
+	
+	
+	hibernate,ibatis,toplink,eclipselink............
+	
+	hibernate	------->EntityManager	
+	
+	class---->table
+	
+	variables---->fields/columns
+	
+	object ----->rows/records
+	
+	1.Loading Driver class.
+	
+	2.create a connection.
+				
+	3.create a statement.
+	
+	4.Executing the quires.
+	
+	5.close the connection.
+	
+	6.hibernate 
+	
+	EntityManagerFactory obj =Persistence.createEMF("NAME")
+	
+			
+	persistence.xml
+	
+	
+	<property>
+	
+	
+	
+	
+	maven:-It's a build tool.
+	
+	
+											Spring
+	
+	spring:- Spring is a non-invasive framework which is used to create light weighted and loosley 
+				coupled web applications.
+				
+				
+				
+	invasive:-	this type of frameworks rushes the programmer to use the predefined classes or protocols
+	
+	non-invasive :- which will not rushes the programmer to use the predefined classes or protocols
+	
+	
+	
+	heavy weighted:-
+	
+	class A{
+	
+	//1000 methods
+	
+	}
+	
+	class B extends A {
+	
+	//200 met's + 1000 met's   =1200 met's
+	}
+	
+	
+	tightly coupled:--If the dependencies b/n the classes is very high it's called as tightly coupled
+	
+	
+	loosley coupled:-If the dependencies b/n the classes is low  it's called as loosely coupled
+	
+	
+	
+	
+	EJB(Enterprise java beans)- tightly coupled applications
+	
+	
+	Spring 1.x    ------ Spring 6.x
+	
+	
+	Rod Johnson
+	
+	
+	spirng security ,Spring cloud ,Spring Rest ,Spring Boot ,Spring Core	........
+	
+	
+	Spring Core:-It is to avoid the dependencies between the classes , and to make the app as loosley coupled app.
+	
+	
+Containers:-are to create obj's in spring
+					(1)Bean Factory			
+
+					(2)Application Context
+					
+					
+	To inject the data into an obj :-DEPENDENCY INJECTION
+	
+	
+	(1)(Setters and getters)Setter Injection:-<property></property>
+	
+	(2)(Parametrized constructor)Constructor Injection :-<constructor-arg><constructor-arg>
+	
+	(3)Autowiring 
+	
+	
+	
+	Configuration :- 3 types 
+	
+	
+	(1)xml config
+	
+	
+	(2)Annotation config
+	
+	(3)java Config
