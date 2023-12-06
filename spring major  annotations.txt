@@ -1,0 +1,250 @@
+			             SPRING FRAMEWORK ANNOTATIONS
+			             ================================
+
+Spring Core, MVC and Stereotype Annotations:
+-------------------------------------------------------------
+
+1)Autowired- It injects dependency objects automatically. (setter and constructor)
+
+2)Component- It is used to denote a class as a component i.e, the classes are automaticaaly detected for
+					dependency injection.
+
+3)Service- It is a specialization of component which is only used to annotate java classes that perform
+			some service. (Service class)
+
+4)Repository- It is a specialization of component which is only used to annotate java classes that
+				provides the meachanism of  operations 
+					such as storage, retrieval, search, update and delete. (Dao class)
+
+5)Bean- It is applied on a method to specify that it returns a bean(Object) managed by spring container. 
+				(method level annotation).
+
+6)Configuration- Used on classes that defines beans. It is an analog for an XML configuration file.
+
+7)ComponentScan- It is used to specify the packages that we want to be scanned in order to locate the 
+				spring components.
+
+8)Controller- It is used to indicate that it’s a web controller class.
+
+9)Transactional- It is used to commit the actions we perform to the database from service.
+
+10)Entity- It defines that a class can be mapped to a table.
+
+11)Table- It is used to specify the name of the database table to be used for mapping.
+
+12)Id- It is used to specify the primary key of an entity.
+
+13)Generated T- It is applied to a primary key property to generate values automatically using sequence.
+
+14)Value- Used to assign default values to variables and method arguments.
+
+15)Scope- Used to instantiate objects when requested from reference. (Singleton-same object, Prototype-diff object every time).
+
+16)Column- Used to indicate specific characteristics of the physical database column.
+
+17)Query-  we can provide jpql implementations according to our requirement.
+
+======================================================================================================
+
+Spring boot Annotations:
+------------------------
+
+
+18)EnableAutoConfiguration- It is used to perform auto configuration  i.e, default configuration.
+
+19)SpringBootApplication- It is the combination of componentscan, configuration and 
+			enableautoconfiguration annotations. This annotation is used in application class(main class) 
+				while setting up a spring boot project in its base package.
+
+
+======================================================================================================
+
+REST Annotations:
+------------------------
+
+20)RestController- Use to create restful WebServices and also takes care of mapping request data to the
+						defined request 
+						handler method. 
+
+21)RequestMapping- Used to map HTTP requests to handler methods.
+
+22)CrossOrigin- Used to handle cross origin resource sharing which enables cross origin requests.  
+
+23)GetMapping- This annotation is used for mapping HTTP GET requests onto specific handler methods.
+	            It acts as a shortcut for @RequestMapping(method = RequestMethod.GET)
+
+24)PostMapping- This annotation is used for mapping HTTP POST requests onto specific handler methods.
+	            It acts as a shortcut for @RequestMapping(method = RequestMethod.POST).
+
+25)PutMapping- This annotation is used for mapping HTTP PUT requests onto specific handler methods.
+	            It acts as a shortcut for @RequestMapping(method = RequestMethod.PUT).
+
+26)DeleteMapping-This annotation is used for mapping HTTP DELETE requests onto specific handler methods.
+	            It acts as a shortcut for @RequestMapping(method = RequestMethod.DELETE).
+
+27)ExceptionHandler- This annotation is used at method levels to handle exception at the controller level.
+
+28)ResponseStatus- It marks a method or exception class with a status code and a reason that must be returned.
+		It set the status code of an HTTP response.
+
+29)ControllerAdvice- It allows you to handle exceptions across the whole application in one global handling component.
+
+30)PathVariable- Used to extract the data provided in URI to the front-end.
+
+31)RequestBody- Used to bind the HTTP request with an object in method. 
+
+32)RequestParam- Used to read the data and bind it automatically to the parameter present in the provided method.
+
+33)ResponseBody- It indicates that the result type should be written straight in the response body in whatever format you specify like JSON or XML. Spring converts the returned object into a response body by using the HttpMessageConveter.
+
+
+======================================================================================================
+
+Spring Cloud Annotations:
+---------------------------------
+
+34)EnableEurekaServer- It is added to enable the service registry and start the server with which another applications can communicate to provide their status.
+
+35)EnableEurekaClient- It is used to make our application to register as a service.
+
+36)EnableConfigServer- It is used to externally configure properties of an application in central repository and access them.
+
+37)EnableAdminServer- It is an admin which is used to monitor all the microservices. (such as Reponse time)
+
+======================================================================================================
+
+Spring Security Annotations:
+----------------------------
+
+38)EnableWebSecurity-  automatically apply the class to the global WebSecurity.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Angular Notes:
+-------------------------			html+css+ts
+39)subscribe-it is method on observable type.
+
+40)obervable-it is a utility that asynchronously or synchronously stream data to a variety of componenets or services.
+
+41)Angular -AngularJS is a JavaScript framework. It can be added to an HTML page with a <script> tag.
+AngularJS extends HTML attributes with Directives, and binds data to HTML.
+
+42)Ng class-The ng-class Directive in AngularJS is used to specify the CSS classes on HTML elements. It is used to dynamically bind classes on an HTML element.
+
+43)Ng style-It is used for styling html pages(just like css).
+
+44)Data binding-it is a proess that establishes a connection b/w the app user inteface and the data it displays/automatic synchronization of data b/w model and view.
+
+45)Authentication-user has to validate with user if the given username or Id is correct.
+already a person who has access and can modify the access and transfer the authorization.
+
+46)Authorization- unique id is provided to login(giving permission to autorization).
+
+47)Metadata- it is data with in data(metadata to class to tell angular that my component is a component).
+
+48)ng model-it is a directive that binds the values of html control like input,select,text area to application data.
+
+49) two way data binding-the data goes both ways if the user changes the value inside the input filed the angular js properties will also change.created by ng model.{{}}.
+
+50) Angular 6-Angular 6 is a JavaScript framework for building web applications and apps in JavaScript, html, and TypeScript, which is a superset of JavaScript.
+
+51)Component-Components are like the basic building block in an Angular application. Components are defined using the @component decorator. A component has a selector , template , style and other properties, using which it specifies the metadata required to process the component.
+
+52)Selector-The selector is a property inside the angular component which identifies the directive in a template and triggers instantiation of the directive.
+
+53)decorators-Decorators are a design pattern that is used to separate modification or decoration of a class without modifying the original source code.
+
+54)derectives-A directive allows you to attach a behavior to DOM elements. This behavior could be as simple or as complex as you'd like. *ngFor and *ngIf .
+
+55)DOM-The Document Object Model (DOM) is an application programming interface (API) for valid HTML and well-formed XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
+
+56) ng content-You use the <ng-content></ng-content> tag as a placeholder for that dynamic content, then when the template is parsed Angular will replace that placeholder tag with your content . 
+
+57)client certificate-A client side certificate is a certificate you use to establish your server to the client. This is the best way for the server to "know" exactly who is connecting to it.
+
+58)constructor-A constructor is a special method which will be called whenever we create new objects. And generally used of initializing the class members.
+
+59)ngOnInit-ngOnInit is a life cycle hook called by Angular to indicate that Angular is done creating the component.It is a predefined method in a TypeScript class which is called when the class is instantiated.
+
+60)Service-Services in Angular allow you to define code that's accessible and reusable throughout multiple components. A common use case for services is when you need to communicate with a backend of some sort to send and receive data.
+
+61)Routing-AngularJS routes enable you to create different URLs for different content in your application. AngularJS routes allow one to show multiple contents depending on which route is chosen.
+
+62)pipes-It takes integers, strings, arrays, and date as input separated with | to be converted in the format as required and display the same in the browser.
+
+63)http service-Http Service will help us fetch external data, post to it, etc. We need to import the http module to make use of the http service.
+import { HttpClientModule }    from '@angular/common/http';
+http client-it is pre defined service. 
+
+64)Directives in Angular is a js class, which is declared as @directive. We have 3 directives in Angular. The directives are listed below −
+
+Component Directives
+These form the main class having details of how the component should be processed, instantiated and used at runtime.
+
+Structural Directives
+A structure directive basically deals with manipulating the dom elements. Structural directives have a * sign before the directive. For example, *ngIf and *ngFor.
+
+Attribute Directives
+Attribute directives deal with changing the look and behavior of the dom element. You can create your own directives as shown below.
+
+65)Event Binding-When a user interacts with an application in the form of a keyboard movement, a mouse click, or a mouseover, it generates an event. 
+These events need to be handled to perform some kind of action. This is where event binding comes into picture.
+
+66)Module-Module in Angular refers to a place where you can group the components, directives, pipes, and services, which are related to the application.
+
+67)component-Components are basically classes that interact with the .html file of the component, which gets displayed on the browser.
+
+68) form-With a template driven form, most of the work is done in the template; and with the model driven form, most of the work is done in the component class.
+
+69)Angular Cli-Angular CLI makes it easy to start with any Angular project. Angular CLI comes with commands that help us create and start on our project very fast. 
+
+-->impot-enables an Angular module to use functionality that was defined in another Angular module. 
+
+-->Grouping in CSS is a technique used to reduce code redundancy and write clean, concise easy to follow code
+
+-->components types
+--app.component.css
+--app.component.html
+--app.component.ts
+
+-->Scope of variable-Scope refers to the visibility of variables.
+ In other words, which parts of your program can see or use it. Normally, every variable has a global scope. Once defined, 
+every part of your program can access a variable.
+inside function it is local and outside the function it is gloabal.
+
+-->
+Transpile TypeScript into JavaScript
+Step 1: Create a simple TS file. Open VS Code on an empty folder and create a helloworld. ...
+Step 2: Run the TypeScript build. Execute Run Build Task (Ctrl+Shift+B) from the global Terminal menu. ...
+Step 3: Make the TypeScript Build the default. ...
+Step 4: Reviewing build issues.
+
+difference b/w override and inheritance-override fucationality changes but doesnot change in inheritance
+
+
+SpringBoot
+-----------
+70)Exceptional Handling-An exception is a problem that arises during execution of program.
+So at that time the msg is given in system format.Inorder to give a user defined msg for that problem we handle that exception.
+
+71)Jpa-it allows us to acccess and persist data b/w data objects.
+
+72)Microservices-it is a architectural desgin style which decomposes larger applications into samller services and make communicaion b/w them.
+every microservice are selfcontained.
+
+73)SpringBoot-monolithic,it is a open source java based frame work used to  create microdservices.helps to avoid code configuration. it is used to build standalone and production ready spring applications.
+features or advantages:-
+a)embedded server
+b)autoconfiguration
+c)starters
+d)actuators.
+
+74)DataBase-A database is an organized collection of structured information, or data.
+
+75)Anonymous fuction in typescript-doesnot have name of the function but it has the functionality.
+
+76)ng module
+base module-app.component
+decalaartion-components
+bootstarp
+imports-modules
+selectors
